@@ -77,3 +77,37 @@ h6 {
 }
 
 /* ---------- Layout ---------- */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+    grid-column: 1;
+}
+
+.header {
+grid-column: 2;
+}
+
+.main-content {
+grid-column: 2;
+}
+
+.main-content-secondary {
+
+}
+
+/* ---------- Styles ---------- */
+
+.sidebar {
+  background-color: #1f91d2;
+}
+
+.header {
+    background-color: beige;
+}
+.main-content {
+    background-color: #E3E8EF;
+}
