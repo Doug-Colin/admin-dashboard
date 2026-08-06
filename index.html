@@ -13,22 +13,79 @@
     />
   </head>
   <body>
-    <div class="container">
-      <nav class="sidebar">
-        <h1><img src="./assets/icons/view-dashboard.svg" alt="">Dashboard</h1>
-        <ul>
-          <li><img src="./assets/icons/home.svg" alt="">Home</li>
-          <li><img src="./assets/icons/card-account-details-outline.svg" alt="">Profile</li>
-          <li><img src="./assets/icons/message.svg" alt="">Messages</li>
-          <li><img src="./assets/icons/clock-time-three.svg" alt="">History</li>
-          <li><img src="./assets/icons/note-multiple.svg" alt="">Tasks</li>
-        </ul>
-        <ul>
-          <li><img src="./assets/icons/cog.svg" alt="">Account</li>
-          <li><img src="./assets/icons/help-box.svg" alt="">Settings</li>
-          <li><img src="./assets/icons/shield-check.svg" alt="">Support</li>
-        </ul>
-      </nav>
+    <div class="app-shell">
+      <div class="sidebar">
+        <h1 class="branding-logo">
+          <img
+            class="icon logo-icon"
+            src="./assets/icons/view-dashboard.svg"
+            alt=""
+          />
+          <span>Dashboard</span>
+        </h1>
+        <nav class="sidebar-nav">
+          <ul>
+            <li>
+              <img class="icon" src="./assets/icons/home.svg" alt="" />
+              <span>Home</span>
+            </li>
+            <li>
+              <img
+                class="icon"
+                src="./assets/icons/card-account-details-outline.svg"
+                alt=""
+              /><span>Profile</span>
+            </li>
+            <li>
+              <img class="icon" src="./assets/icons/message.svg" alt="" />
+              <span>Messages</span>
+            </li>
+            <li>
+              <img
+                class="icon"
+                src="./assets/icons/clock-time-three.svg"
+                alt=""
+              />
+              <span>History</span>
+            </li>
+            <li>
+              <img
+                class="icon"
+                src="./assets/icons/note-multiple.svg"
+                alt=""
+              /><span>Tasks</span>
+            </li>
+            <li>
+              <img
+                class="icon"
+                src="./assets/icons/account-group.svg"
+                alt=""
+              /><span>Communities</span>
+            </li>
+          </ul>
+        </nav>
+        <nav class="sidebar-nav">
+          <ul>
+            <li>
+              <img class="icon" src="./assets/icons/cog.svg" alt="" /><span
+                >Settings</span
+              >
+            </li>
+            <li>
+              <img class="icon" src="./assets/icons/help-box.svg" alt="" /><span
+                >Support</span
+              >
+            </li>
+            <li>
+              <img
+                class="icon"
+                src="./assets/icons/shield-check.svg"
+                alt=""
+              /><span>Privacy</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <header class="header">
         <search></search>
