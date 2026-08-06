@@ -78,17 +78,17 @@ h6 {
 
 /* ---------- Global Styles ---------- */
 ul > li {
-list-style: none;
+  list-style: none;
 }
 
 /* ---------- Layout ---------- */
 
-.container {
+.app-shell {
   display: grid;
   min-height: 100vh;
   /* Don't increase sidebar width on wider screens. */
   /* Do increase sidebar width if user adjusts system font-size. */
-  grid-template-columns: 14rem 1fr;
+  grid-template-columns: 18rem 1fr;
   /* Same as above for header. */
   grid-template-rows: 8rem 1fr;
 }
@@ -97,9 +97,38 @@ list-style: none;
   grid-column: 1;
   grid-row: 1 / 3;
 
-  /* display: grid; */
-/* grid-template-rows: repeat(10, ); */
-  
+}
+
+.sidebar > h1 {
+    padding-left: 1rem;
+}
+
+.sidebar h1,
+.sidebar li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.5rem;
+}
+
+.sidebar-nav,
+.branding-logo {
+    padding-block: 1rem;
+}
+
+.sidebar ul {
+display: grid;
+gap: 1rem;
+}
+
+.logo-icon {
+  width: 3rem;
+}
+
+/* Sizing of other sidebar icons. */
+.sidebar li > img {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: white;
 }
 
 .header {
@@ -125,14 +154,20 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+nav > ul > li {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
 /* ---------- Styles ---------- */
 
 .sidebar {
   color: #ffffff;
   background-color: #4391d0;
   border: 2px solid #0f496b;
+}
 
-  font-size: rem;
+.icon {
+  filter: invert(1);
 }
 
 .header {
@@ -152,4 +187,9 @@ body {
 .main-content-secondary {
   background-color: rgb(242, 209, 165);
   border: 2px solid rgb(148, 128, 101);
+}
+
+
+a {
+    
 }
