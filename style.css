@@ -128,10 +128,9 @@ ul {
 }
 
 /* Sizing of other sidebar icons. */
-.sidebar li > img {
+.sidebar-nav .icon {
   width: 1.5rem;
   height: 1.5rem;
-  color: white;
 }
 
 .header {
@@ -163,8 +162,20 @@ ul {
 }
 
 .card {
-  height: 100%;
+  padding: 1.5rem 1.5rem;
 }
+
+.card .icon-btn {
+  width: 2rem;
+  height: 2rem;
+}
+
+.card-actions {
+display: flex;
+justify-content: end;
+gap: 1rem;
+}
+
 
 .main-content-secondary {
   padding-left: 1.5rem;
@@ -189,7 +200,7 @@ nav > ul > li {
   border: 2px solid #0f496b;
 }
 
-.icon {
+.sidebar .icon {
   filter: invert(1);
 }
 
@@ -209,6 +220,12 @@ nav > ul > li {
   background-color: #ffffff;
   border: 2px solid #afafaf;
 }
+
+.card .icon-btn {
+  border: none;
+  background-color: #ffffff;
+}
+
 .main-content-secondary {
   background-color: rgb(242, 209, 165);
   border: 2px solid rgb(148, 128, 101);
