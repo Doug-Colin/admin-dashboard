@@ -143,17 +143,33 @@ ul {
   grid-row: 2;
   display: grid;
   grid-template-columns: 4fr 1fr;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
 }
 
 .main-content-primary {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.section-title {
+  padding-bottom: 0.5rem;
+}
+
+.main-content-primary > .cards-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
   height: 100%;
 }
 
-.main-content-primary .card {
-
+.main-content-secondary {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
-
 
 /* ---------- Typography ---------- */
 
@@ -183,23 +199,17 @@ nav > ul > li {
 }
 .main-content {
   background-color: #e3e8ef;
-  border: 2px solid #979a9f;
 }
 
 .main-content-primary {
   background-color: rgb(171, 252, 225);
-  border: 2px solid rgb(100, 144, 129);
-}
-
-.main-content-secondary {
-  background-color: rgb(242, 209, 165);
-  border: 2px solid rgb(148, 128, 101);
 }
 
 .card {
-  background-color: #4391d0;
-  border: 2px solid #704a4a;
+  background-color: #ffffff;
+  border: 2px solid #afafaf;
 }
-
-a {
+.main-content-secondary {
+  background-color: rgb(242, 209, 165);
+  border: 2px solid rgb(148, 128, 101);
 }
