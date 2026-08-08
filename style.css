@@ -141,7 +141,7 @@ ul {
   grid-column: 2;
   grid-row: 2;
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 5fr 2fr;
   padding-top: 1rem;
   padding-bottom: 4rem;
 }
@@ -163,6 +163,8 @@ ul {
 
 .card {
   padding: 1.5rem 1.5rem;
+  height: 28vh;
+  position: relative;
 }
 
 .card .icon-btn {
@@ -171,14 +173,16 @@ ul {
 }
 
 .card-actions {
-display: flex;
-justify-content: end;
-gap: 1rem;
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1rem;
 }
 
-
 .main-content-secondary {
-  padding-left: 1.5rem;
+  /* padding-left: 1.5rem; */
   padding-right: 1.5rem;
 }
 
@@ -191,6 +195,11 @@ body {
 nav > ul > li {
   font-size: 1.25rem;
   font-weight: bold;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 /* ---------- Styles ---------- */
 
@@ -213,12 +222,18 @@ nav > ul > li {
 }
 
 .main-content-primary {
-  background-color: rgb(171, 252, 225);
 }
 
 .card {
   background-color: #ffffff;
-  border: 2px solid #afafaf;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    #f2a93b 0%,
+    #f2a93b 2%,
+    #ffffff 2%,
+    #ffffff 100%
+  );
 }
 
 .card .icon-btn {
