@@ -109,8 +109,16 @@ ul {
 .sidebar h1,
 .sidebar li {
   display: grid;
+  /* Use grid to get two children inline */
   grid-template-columns: auto 1fr;
-  gap: 1.5rem;
+}
+
+
+.sidebar h1 {
+    gap: 1rem;
+}
+.sidebar li {
+    gap: 1.5rem;
 }
 
 .sidebar-nav,
@@ -121,6 +129,8 @@ ul {
 .sidebar ul {
   display: grid;
   gap: 1rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
 }
 
 .logo-icon {
