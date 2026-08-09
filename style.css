@@ -145,17 +145,19 @@ ul {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 2fr 1fr;
   align-items: center;
-  padding: 0 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: .5rem;
 }
 
-.user-actions,
+.profile-actions,
 .header-action-buttons {
   grid-column: 2 / 3;
   justify-self: end;
 }
 
 .search-form,
-.user-actions,
+.profile-actions,
 .user-welcome,
 .header-action-buttons {
   display: flex;
@@ -167,10 +169,11 @@ ul {
   gap: 1rem;
 }
 
-.user-actions,
+.profile-actions,
 .header-action-buttons {
   gap: 2rem;
 }
+
 
 .avatar-small {
   width: 3rem;
@@ -244,6 +247,21 @@ h2 {
   font-size: 1.25rem;
   font-weight: 600;
 }
+
+.header {
+  font-weight: bold;
+}
+
+.profile-actions > .username {
+  font-size: 1.2rem;
+}
+
+.welcome-text > .greeting {
+font-size: .9rem;
+}
+.welcome-text > .user-handle {
+font-size: 1.5rem;
+}
 /* ---------- Styles ---------- */
 
 .sidebar {
@@ -283,8 +301,12 @@ h2 {
 }
 
 .header-action-btn {
+  color: #ffffff;
   background-color: #4391d0;
-  width: 4rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  text-align: center;
 }
 
 .main-content-secondary {
