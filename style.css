@@ -238,10 +238,11 @@ ul {
 .team {
   padding-left: 2rem;
   padding-right: 2rem;
-  /* height: min-content; */
 }
 
 .announcement-item {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
 }
 .announcement-text {
   display: -webkit-box;
