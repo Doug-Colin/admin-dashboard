@@ -15,13 +15,13 @@
   <body>
     <div class="app-shell">
       <div class="sidebar">
-        <h1 class="branding-logo">
+        <h1 class="branding">
           <img
-            class="icon logo-icon"
+            class="icon branding-icon"
             src="./assets/icons/view-dashboard.svg"
             alt=""
           />
-          <span>Dashboard</span>
+          <span class="branding-text">Dashboard</span>
         </h1>
         <nav class="sidebar-nav">
           <ul>
@@ -88,44 +88,33 @@
       </div>
 
       <header class="header">
+        <form class="search-form">
+          <button class="icon-btn" type="submit">
+            <img class="icon" src="./assets/icons/magnify.svg" alt="" />
+          </button>
+          <input type="search" size="65" placeholder="Search" />
+        </form>
+        <div class="profile-actions">
+          <button class="icon-btn">
+            <img class="icon" src="./assets/icons/bell-ring.svg" alt="" />
+          </button>
+          <img class="avatar-small" src="./assets/icons/cardinal.png" alt="" />
+          <span class="username">Morgan Oakley</span>
+        </div>
 
-          <form class="search-form">
-            <button class="icon-btn" type="submit">
-              <img class="icon" src="./assets/icons/magnify.svg" alt="" />
-            </button>
-            <input type="search" size="70" placeholder="Search" />
-          </form>
-          <div class="profile-actions">
-            <button class="icon-btn">
-              <img class="icon" src="./assets/icons/bell-ring.svg" alt="" />
-            </button>
-            <img
-              class="avatar-small"
-              src="./assets/icons/cardinal.png"
-              alt=""
-            />
-            <span class="username">Morgan Oakley</span>
+        <div class="user-welcome">
+          <img class="avatar-large" src="./assets/icons/cardinal.png" alt="" />
+          <div class="welcome-text">
+            <p class="greeting">Hi there,</p>
+            <h1 class="user-handle">Morgan Oakley (@morgan)</h1>
           </div>
+        </div>
 
-
-          <div class="user-welcome">
-            <img
-              class="avatar-large"
-              src="./assets/icons/cardinal.png"
-              alt=""
-            />
-            <div class="welcome-text">
-              <p class="greeting">Hi there,</p>
-              <h1 class="user-handle">Morgan Oakley (@morgan)</h1>
-            </div>
-          </div>
-
-          <div class="header-action-buttons">
-            <button class="header-action-btn">New</button>
-            <button class="header-action-btn">Upload</button>
-            <button class="header-action-btn">Share</button>
-          </div>
-
+        <div class="header-action-buttons">
+          <button class="header-action-btn">New</button>
+          <button class="header-action-btn">Upload</button>
+          <button class="header-action-btn">Share</button>
+        </div>
       </header>
 
       <main class="main-content">
@@ -335,47 +324,51 @@
         </section>
 
         <section class="main-content-secondary">
-          <h2 class="section-title">Announcements</h2>
-          <ul>
-            <li>
-              <article class="announcement">
-                <h3 class="announcement-title"></h3>
-                <p>
-                  Accumsan maecenas potenti ultricies habitant morbi senectus
-                  netus. Nisl malesuada lacinia integer nunc posuere ut
-                  hendrerit. Suspendisse aliquet nisi sodales consequat magna
-                  ante condimentum.
-                </p>
-              </article>
-            </li>
-            <li>
-              <article class="announcement">
-                <h3 class="announcement-title"></h3>
-                <p>
-                  Venenatis ultrices proin libero feugiat tristique accumsan
-                  maecenas. Nec metus bibendum egestas iaculis massa nisl
-                  malesuada.
-                </p>
-              </article>
-            </li>
-            <li>
-              <article class="announcement">
-                <h3 class="announcement-title"></h3>
-                <p>
-                  Urna tempor pulvinar vivamus fringilla lacus nec metus. Purus
-                  est efficitur laoreet mauris pharetra vestibulum fusce. Cras
-                  eleifend turpis fames primis vulputate ornare sagittis.
-                </p>
-              </article>
-            </li>
-          </ul>
-          <h2>Team</h2>
-          <ul>
-            <li class="user">User 1</li>
-            <li class="user">User 2</li>
-            <li class="user">User 3</li>
-            <li class="user">User 4</li>
-          </ul>
+          <div >
+            <h2 class="section-title">Announcements</h2>
+            <ul class="announcements">
+              <li>
+                <article class="announcement">
+                  <h3 class="announcement-title"></h3>
+                  <p>
+                    Accumsan maecenas potenti ultricies habitant morbi senectus
+                    netus. Nisl malesuada lacinia integer nunc posuere ut
+                    hendrerit. Suspendisse aliquet nisi sodales consequat magna
+                    ante condimentum.
+                  </p>
+                </article>
+              </li>
+              <li>
+                <article class="announcement">
+                  <h3 class="announcement-title"></h3>
+                  <p>
+                    Venenatis ultrices proin libero feugiat tristique accumsan
+                    maecenas. Nec metus bibendum egestas iaculis massa nisl
+                    malesuada.
+                  </p>
+                </article>
+              </li>
+              <li>
+                <article class="announcement">
+                  <h3 class="announcement-title"></h3>
+                  <p>
+                    Urna tempor pulvinar vivamus fringilla lacus nec metus. Purus
+                    est efficitur laoreet mauris pharetra vestibulum fusce. Cras
+                    eleifend turpis fames primis vulputate ornare sagittis.
+                  </p>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <div >
+            <h2>Team</h2>
+            <ul class="team">
+              <li class="user">User 1</li>
+              <li class="user">User 2</li>
+              <li class="user">User 3</li>
+              <li class="user">User 4</li>
+            </ul>
+          </div>
         </section>
       </main>
     </div>

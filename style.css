@@ -92,9 +92,9 @@ ul {
   min-height: 100vh;
   /* Don't increase sidebar width on wider screens. */
   /* Do increase sidebar width if user adjusts system font-size. */
-  grid-template-columns: 18rem 1fr;
+  grid-template-columns: 19.5rem 1fr;
   /* Same as above for header. */
-  grid-template-rows: 11rem 1fr;
+  grid-template-rows: 12rem 1fr;
 }
 
 .sidebar {
@@ -118,7 +118,7 @@ ul {
 }
 
 .sidebar-nav,
-.branding-logo {
+.branding {
   padding-block: 1rem;
 }
 
@@ -129,7 +129,7 @@ ul {
   padding-top: 1rem;
 }
 
-.logo-icon {
+.branding-icon {
   width: 3rem;
 }
 
@@ -147,7 +147,7 @@ ul {
   align-items: center;
   padding-left: 3rem;
   padding-right: 3rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 .profile-actions,
@@ -173,7 +173,6 @@ ul {
 .header-action-buttons {
   gap: 2rem;
 }
-
 
 .avatar-small {
   width: 3rem;
@@ -229,7 +228,17 @@ ul {
 }
 
 .main-content-secondary {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
   padding-right: 1.5rem;
+}
+
+.announcements,
+.team {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /* height: min-content; */
 }
 
 /* ---------- Typography ---------- */
@@ -238,8 +247,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-nav > ul > li {
-  font-size: 1.25rem;
+.branding-text {
+  font-size: 1.75rem;
+}
+
+.sidebar li {
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
@@ -257,10 +270,10 @@ h2 {
 }
 
 .welcome-text > .greeting {
-font-size: .9rem;
+  font-size: 0.9rem;
 }
 .welcome-text > .user-handle {
-font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 /* ---------- Styles ---------- */
 
@@ -276,11 +289,9 @@ font-size: 1.5rem;
 .header {
   background-color: #ffffff;
 }
-.main-content {
+.main-content,
+.main-content-secondary {
   background-color: #e3e8ef;
-}
-
-.main-content-primary {
 }
 
 .card {
@@ -309,7 +320,8 @@ font-size: 1.5rem;
   text-align: center;
 }
 
-.main-content-secondary {
-  background-color: rgb(242, 209, 165);
-  border: 2px solid rgb(148, 128, 101);
+.announcements,
+.team {
+  background-color: #ffffff;
+  border: 1px solid #000;
 }
