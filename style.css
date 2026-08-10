@@ -174,13 +174,36 @@ ul {
   gap: 2rem;
 }
 
-.avatar-small {
+.avatar-small-background {
   width: 3rem;
   height: 3rem;
+  border-radius: 50%;
+  background-color: #f3cf48;
+  position: relative;
 }
+
+.avatar-small {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 5%;
+  right: 20%;
+}
+
+.avatar-large-background {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  background-color: #f3cf48;
+  position: relative;
+}
+
 .avatar-large {
-  width: 5rem;
-  height: 5rem;
+  width: 4em;
+  height: 4rem;
+  position: absolute;
+  top: 5%;
+  right: 20%;
 }
 
 .main-content {
@@ -250,7 +273,7 @@ ul {
 }
 
 .header {
-    /* Position container 'above' others on z-axis,
+  /* Position container 'above' others on z-axis,
   so box shadow paints over .main-content container. */
   position: relative;
   z-index: 1;
