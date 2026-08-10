@@ -243,11 +243,23 @@ ul {
   padding-right: 1.5rem;
 }
 
+.card,
+.announcements,
+.team {
+  box-shadow: 3px 5px 5px 0 #d8d9da;
+}
 
+.header {
+    /* Position container 'above' others on z-axis,
+  so box shadow paints over .main-content container. */
+  position: relative;
+  z-index: 1;
+  box-shadow: 3px 5px 5px 0 #d8d9da;
+}
 
 .announcement-item {
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .announcement-text {
@@ -298,11 +310,11 @@ h2 {
 }
 
 .announcement-title {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .announcement-text {
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 /* ---------- Styles ---------- */
 
@@ -335,9 +347,9 @@ h2 {
   );
 }
 
-
-.card-text, .announcement-text {
-  color: #636363
+.card-text,
+.announcement-text {
+  color: #636363;
 }
 .icon-btn {
   border: none;
@@ -356,14 +368,13 @@ h2 {
 .announcements,
 .team {
   background-color: #ffffff;
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .announcement-item {
-  border-bottom: 1px solid #D3D3D3;
+  border-bottom: 1px solid #d3d3d3;
 }
 
 .announcement-item:last-child {
   border-bottom: none;
 }
-
