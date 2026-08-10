@@ -94,7 +94,7 @@ ul {
   /* Do increase sidebar width if user adjusts system font-size. */
   grid-template-columns: 19.5rem 1fr;
   /* Same as above for header. */
-  grid-template-rows: 12rem 1fr;
+  grid-template-rows: 11.5rem 1fr;
 }
 
 .sidebar {
@@ -187,7 +187,7 @@ ul {
   grid-column: 2;
   grid-row: 2;
   display: grid;
-  grid-template-columns: 5fr 2fr;
+  grid-template-columns: 5.5fr 2fr;
   padding-top: 1.5rem;
   padding-bottom: 4rem;
 }
@@ -234,16 +234,27 @@ ul {
   padding-right: 1.5rem;
 }
 
-.announcements,
-.team {
+.announcements {
+  display: grid;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
+
+
 .announcement-item {
-  padding-top: 2rem;
-  padding-bottom: 1.5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
+
+.announcement-text {
+  margin-bottom: 1rem;
+}
+
+/* Truncate text with ellipsis. */
 .announcement-text {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -284,6 +295,14 @@ h2 {
 }
 .welcome-text > .user-handle {
   font-size: 1.5rem;
+}
+
+.announcement-title {
+  font-size: .9rem;
+}
+
+.announcement-text {
+  font-size: .75rem;
 }
 /* ---------- Styles ---------- */
 
@@ -333,5 +352,14 @@ h2 {
 .announcements,
 .team {
   background-color: #ffffff;
-  border: 1px solid #000;
+    border-radius: 10px;
 }
+
+.announcement-item {
+  border-bottom: 1px solid grey;
+}
+
+.announcement-item:last-child {
+  border-bottom: none;
+}
+
